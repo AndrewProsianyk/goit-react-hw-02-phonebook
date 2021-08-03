@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Filter.module.css'
 
 const Filter = ({ value, onChange }) => (
-  <label>
-    Let's find somebody
-    <input type="text" value={value} onChange={onChange} />
+  <label className={styles.label}>
+    <span>Let's find somebody</span>
+    <input
+      className={styles.input}
+      type="text"
+      value={value}
+      onChange={onChange} />
   </label>
 );
 
